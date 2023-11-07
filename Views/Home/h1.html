@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <h1 class="text-center">Proyecto de componentes</h1>
+    <!-- <div class="row">
+        <div class="offset-9 col-3 mb-3">
+            <a class="btn btn-secondary d-block mx-auto btn-lg"> Nuevo</a>
+        </div>
+    </div> -->
+
+
+
+    <div class="row">
+
+        <div class="offset-12">
+
+
+            <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="p-2 bd-highlight">
+                    <h5>Nueva factura:</h5>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <button type="button" class="btn btn-primary btn-sm">Nuevo</button>
+                </div>
+            </div>
+
+
+            <div class="card border">
+                <div class="card-header bg-dark">
+                    <h3 class="text-white">David gonzalez</h3>
+                </div>
+
+                <div class="d-flex justify-content-start">
+
+                    <div class=" order-3 p-2 bd-highlight">
+
+                        <div class="d-flex bd-highlight">
+                            <div class=" p-2 bd-highlight">
+                                <h4 class="text-left">cliente</h4>
+                                <select name="d" id="">
+                                    <option value="prueba22">pruebaa</option>
+                                    <option value="prueba1">prueba1</option>
+                                </select>
+                            </div>
+                            <div class=" p-1 flex-grow-1 bd-highlight">
+                                <h4 class="text-left">Numero de factura</h4>
+                                <input type="" class="form-control" id="inputPassword2" placeholder="prueba input">
+
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex bd-highlight">
+                            <div class=" p-2 flex-grow-1 bd-highlight">
+                                <button type="button" class="btn btn-primary btn-sm" id="AgregarProducto">Agregar
+                                    producto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="100%" cellspacing="0" id="TablaProductos">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio Unitario</th>
+                                    <th>Cantidad</th>
+                                    <th>Imagen</th>
+                                    <th>Totales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <select name="d" id="pruebaSelect">
+                                            <option value="prueba">prueba</option>
+                                            <option value="prueba1">prueba1</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        prueba
+                                    </td>
+                                    <td>
+                                        cantidad
+                                    </td>
+                                    <td>imagen</td>
+                                    <td>totales</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                        </div>
+
+                        <div class="table-responsive col text-right">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <td>Subtotal</td>
+                                    <td>1</td>
+                                </tbody>
+                                <tbody>
+                                    <td>Impuestros (19%)</td>
+                                    <td>1</td>
+                                </tbody>
+                                <tbody>
+                                    <td>Total</td>
+                                    <td>2</td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="h1.js">
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

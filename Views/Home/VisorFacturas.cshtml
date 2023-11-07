@@ -1,0 +1,95 @@
+@model proyectoComponentes.Views.Home.VisorFacturas
+@{
+    ViewData["Title"] = "Visor Facturas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    @* <h1 class="text-center">Proyecto de componentes</h1> *@
+
+
+    <div class="row">
+
+        <div class="offset-12">
+
+            <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="p-2 bd-highlight">
+                    <h5>Tipo de Busqueda</h5>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h5>Cliente</h5>
+                    <input class="form-check-input d-flex justify-content-center" type="radio" name="flexRadioDefault"
+                        id="radioCliente" checked>
+                    <!-- <button type="button" class="btn btn-primary btn-sm">Nuevo</button> -->
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h5>Numero Factura</h5>
+                    <input class="form-check-input d-flex justify-content-center" type="radio" name="flexRadioDefault"
+                        id="radioNumFactura">
+                    <!-- <button type="button" class="btn btn-primary btn-sm">Nuevo</button> -->
+                </div>
+            </div>
+
+
+            <div class="card border">
+                <!-- <div class="card-header bg-dark">
+                    <h3 class="text-white">David gonzalez</h3>
+                </div> -->
+
+                <div class="d-flex justify-content-start">
+
+                    <div class=" order-3 p-2 bd-highlight">
+
+                        <div class="d-flex bd-highlight">
+
+                            <div class=" p-2 bd-highlight">
+                                <h4 class="text-left">CLIENTE</h4>
+                                <select name="Clientes" id="cliente" required>
+                                </select>
+                            </div>
+
+                            <div class=" p-1 flex-grow-1 bd-highlight" id="divFactura">
+                                <h4 class="text-left">Numero de factura</h4>
+                                <input type="" class="form-control" id="inputFactura"
+                                    placeholder="Ingrese numero de Factura">
+                            </div>
+
+                            <div class=" ms-auto p-4 bd-highlight align-self-center">
+                                <button type="button" class="btn btn-primary btn-sm" id="buscarFactura">Buscar</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="100%" cellspacing="0" id="TablaFacturas">
+                            <thead>
+                                <tr>
+                                    <th>Numero de factura</th>
+                                    <th>Fecha emision</th>
+                                    <th>Total facturado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.ActionLink("Crear Factura", "CreacionFactura")
+
+</div>
+
+<script src="~/js/VisorFacturas.js" asp-append-version="true"></script>

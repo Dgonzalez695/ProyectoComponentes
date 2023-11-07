@@ -1,0 +1,127 @@
+@model IEnumerable<proyectoComponentes.Models.Productos>
+@{
+    ViewData["Title"] = "Creacion Facturas";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-center">Proyecto de componentes</h1>
+
+    <div class="row">
+
+        <div class="offset-12">
+
+
+            <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="p-2 bd-highlight">
+                    <h5>Nueva factura:</h5>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <button type="button" class="btn btn-primary btn-sm" id="NuevoFac">Nuevo</button>
+                </div>
+            </div>
+
+
+            <div class="card border">
+                <div class="card-header bg-dark">
+                    <h3 class="text-white">GENERAR FACTURA</h3>
+                </div>
+
+                <div class="d-flex justify-content-start">
+
+                    <div class=" order-3 p-2 bd-highlight">
+
+                        <div class="d-flex bd-highlight">
+                            <div class=" p-2 bd-highlight">
+                                <h4 class="text-left">cliente</h4>
+                                <select name="Clientes" id="cliente" required>
+
+                                </select>
+                            </div>
+                            <div class=" p-1 flex-grow-1 bd-highlight">
+                                <h4 class="text-left">Numero de factura</h4>
+                                <input class="form-control" placeholder="Factura" id="NumeroFactura" required>
+
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex bd-highlight">
+                            <div class=" p-2 flex-grow-1 bd-highlight">
+                                <button type="button" class="btn btn-primary btn-sm" id="agregarProduto"
+                                    id="AgregarProducto">Agregar
+                                    producto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="100%" cellspacing="0" id="TablaProductos">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio Unitario</th>
+                                    <th>Cantidad</th>
+                                    <th>Imagen</th>
+                                    <th>Totales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                        </div>
+
+                        <div class="table-responsive col text-right">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <td>Subtotal</td>
+                                    <td id="idSubtotal"></td>
+                                </tbody>
+                                <tbody>
+                                    <td>Impuestos (19%)</td>
+                                    <td id="idImpuestos"></td>
+                                </tbody>
+                                <tbody>
+                                    <td>Total</td>
+                                    <td id="idTotal"></td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm" id="guardarFactura">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+@Html.ActionLink("Visor Facturas", "VisorFacturas")
+    </div>
+
+
+
+</body>
+
+</html>
+    <script src="~/js/CreacionFactura.js" asp-append-version="true"></script>
